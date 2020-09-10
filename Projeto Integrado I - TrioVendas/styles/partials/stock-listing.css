@@ -1,0 +1,225 @@
+#page-product #container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#search-product {
+    margin-top: 3.2rem;
+}
+
+#search-product label {
+    color: var(--color-text-in-primary);
+}
+
+#search-product .select-block {
+    margin-bottom: 1.4rem;
+}
+
+#search-product button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: background 0.2s;
+    margin-top: 3.2rem;
+}
+
+#search-product button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+#page-product main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+.stock-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: .8rem;
+    margin-top: 2.4rem;
+}
+
+.stock-item header {
+    padding: 3.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.stock-item header img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2%;
+}
+
+.stock-item header div {
+    margin-left: 2.4rem;
+}
+
+.stock-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+
+.stock-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: .4rem;
+}
+
+.stock-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.stock-item footer {
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stock-item footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
+.stock-item footer p strong {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: block;
+}
+.stock-item footer button img {
+    width: 25px;
+    height: 25px;
+}
+
+.stock-item footer button {
+    width: 20rem;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-decoration: none;
+
+    transition: background 0.2s;
+    margin-left: 1.6rem;
+}
+.stock-item footer a {
+    width: 20rem;
+    height: 5.6rem;
+
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-decoration: none;
+
+}
+
+.stock-item footer button:hover {
+    background: var(--color-secondary-dark);
+}
+
+@media (min-width:700px)  {
+    #page-product #container {
+        max-width: 100vw;
+    }
+
+    .page-header {
+        height: 340px;
+    }
+
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+
+    .page-header .header-content {
+        max-width: 740px;
+
+        margin: 0 auto;
+
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-header .header-content strong {
+        max-width: 350px;
+
+    }
+
+    .stock-item header,
+    .stock-item footer {
+        padding: 32px;
+    }
+
+    #search-product {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        position: absolute;
+        bottom: -28px;
+    }
+
+    #page-product main {
+        padding: 32px 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
+    #search-product .select-block {
+        margin-bottom: 0;
+    }
+
+    .stock-item > p {
+        padding: 0 32px;
+    }
+
+    .stock-item footer p strong {
+        display: initial;
+        margin-left: 16px;
+    }
+
+    .stock-item footer button {
+        width: 245px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .stock-item footer button img {
+        margin-right: 16px;
+    }
+}
+

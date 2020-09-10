@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixeira | Sua plataforma de compras online</title>
+
+      <link rel="shortcut icon" href="/images/TM_Logo.png" type="image/png">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/partials/modal.css">
+    <link rel="stylesheet" href="/styles/partials/header.css">
+    <link rel="stylesheet" href="/styles/partials/forms.css">
+    <link rel="stylesheet" href="/styles/partials/furniture-register.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page-customer-registration">
+
+<div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/">
+                    <img src="/images/icons/back.svg" alt="Voltar">
+                </a>
+                <img src="/images/logo.png" alt="Teixeira Móveis">
+            </div>
+
+            <div class="header-content">
+                <strong>Teixeira Móveis<br/></strong>
+                <p>Sua plataforma de compras online</p>
+            </div>
+        </header>
+
+         <main>
+            <form action="" id="create-registration" onsubmit= "return validaCadastro()">
+            <fieldset>
+                <h2>Insira seus dados</h2>
+                <legend>Cadastro de móveis</legend>
+                    <div class="input-block">
+                        <label for="name">Nome</label>
+                        <input type="name" id="name" required="required">
+                        <span class='msg-erro msg-nome'></span>
+                    </div>
+                    <div class="input-block">
+                        <label for="serie">Número de Série</label>
+                        <input id="serie" type="int" required="required">
+                    </div>
+                    <div class="input-block">
+                        <label for="descricao">Descrição</label>
+                        <input id="descricao" type="text" required="required">
+                    </div>
+                    <div class="input-block">
+                        <label for="quantidade">Quantidade</label>
+                        <input id="quantidade" type="text" required="required">
+                    </div>
+            </fieldset>
+             <fieldset>
+                    <div class="select-block">
+                        <label for="tipo">Tipo de Produto</label><br>
+                        <select id="tipo" name="tipo" required="required">
+                            <option value="cozinha">Cozinha</option>
+                            <option value="quarto">Quarto</option>
+                            <option value="Sala">Sala</option>
+                            <option value="banheiro">Banheiro</option>
+                    </div>
+            </fieldset>
+            <fieldset>
+                    <div class="select-block">
+                        <label for="tipo">Tipo de Produto</label><br>
+                        <select id="tipo" name="tipo" required="required">
+                           
+                    </div>
+            </fieldset>
+            </form>
+            <footer>
+                <p>Preencha todos os dados</p>
+                <button type="submit" form="create-registration">Salvar cadastro</button>
+            </footer>
+            
+        </main>
+</div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+            <img src="images/check.svg" alt="Cadastro concluído">
+                <h1>Cadastro concluído</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/furniture-register.js"></script>
+</body>
+</html>

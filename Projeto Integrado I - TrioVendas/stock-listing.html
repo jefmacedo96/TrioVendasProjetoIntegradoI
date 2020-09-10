@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt_br"> <!-- lang é um atributo -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixeira | Sua plataforma de compras online</title>
+
+    <link rel="shortcut icon" href="/images/TM_Logo.png" type="image/png">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/partials/header.css">
+    <link rel="stylesheet" href="/styles/partials/forms.css">
+    <link rel="stylesheet" href="/styles/partials/stock-listing.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+
+</head>
+<body id="page-product" >
+
+   <div id="container">
+     <header class="page-header">
+         <div class="top-bar-container">
+             <a href="login.html">
+             <img src="/images/icons/back.svg" alt="Voltar">
+             </a>
+             <img src="/images/logo.png" alt="Teixeira Móveis">
+         </div>
+
+         <div class="header-content">
+             <strong>Esses são os nossos móveis disponíveis</strong>
+        <form id="search-product">
+            <div class="select-block">
+                <label for="order">Ordenar</label>
+                <select name="order" id="order">
+                    <option value="" disabled="" hidden="">ordem</option>
+                    <option value="1">Relevância</option>
+                    <option value="1">Menor preço</option>
+                    <option value="2">Maior preço</option>
+                </select>
+            </div>
+            <div class="select-block">
+                <label for="products">Produtos</label>
+                <select name="products" id="products">
+                    <option value="" disabled="" hidden="">Selecione uma opção</option>
+                    <option value="0">Mesa</option>
+                    <option value="1">Cama</option>
+                    <option value="2">Guarda roupa</option>
+                    <option value="3">Sofá</option>
+                    <option value="4">Penteadeira</option>
+                    <option value="5">Cadeiras</option>
+                </select>
+            </div>
+            <button type="submit">Filtrar</button>
+            </form>
+         </div>
+     </header>
+
+    <main>
+        <article class="stock-item">
+            <header>
+                <img 
+                    src="https://a-static.mlcdn.com.br/352x470/mesa-de-jantar-6-lugares-copenhage-nogueira-dakota-viero-moveis/panoramamoveis/41910/445e79f2e72245e091715950a6e88ccc.jpg" 
+                    alt="Mesa de jantar completa">
+                <div>
+                    <strong>Mesa De Jantar 6 Lugares</strong>
+                    <span>N° de série: 89604a5a</span>
+                </div>
+            </header>
+
+            <p> <strong>Descrição:</strong>
+            Mesa de madeira com acabamento refinado, composta por MDP e MDF de 15 mm.
+           <br/><br/>
+            <strong>Tipo de produto:</strong> sala.<br/><br/>
+            <strong>Quantidade:</strong> 2 unidades em estoque.<br/></p>
+
+            <footer>
+                <p>Preço do produto:<strong>R$ 816,81 à vista</strong>
+                </p>
+                
+                <button type="button">
+                    <a href="login.html">
+                     <img src="https://image.flaticon.com/icons/png/512/23/23258.png" alt="carrinho de compras">Adicionar ao carrinho
+                    </a> 
+                    
+                </button>
+            </footer>
+        </article>
+    </main>
+
+   </div>
+
+</body>
+</html>

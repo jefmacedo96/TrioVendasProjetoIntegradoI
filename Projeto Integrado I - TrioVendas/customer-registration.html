@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixeira | Sua plataforma de compras online</title>
+
+    <link rel="shortcut icon" href="/images/TM_Logo.png" type="image/png">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/partials/modal.css">
+    <link rel="stylesheet" href="/styles/partials/header.css">
+    <link rel="stylesheet" href="/styles/partials/forms.css">
+    <link rel="stylesheet" href="/styles/partials/customer-registration.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page-customer-registration">
+
+<div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/">
+                    <img src="/images/icons/back.svg" alt="Voltar">
+                </a>
+                <img src="/images/logo.png" alt="Teixeira Móveis">
+            </div>
+
+            <div class="header-content">
+                <strong>Seja bem vindo!<br/>Vamos as compras</strong>
+                <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+            </div>
+        </header>
+
+         <main>
+            <form action="" id="create-registration" onsubmit= "return validaCadastro()">
+            <fieldset>
+                <legend>Insira seus dados</legend>
+                    <div class="input-block">
+                        <label for="name">Nome completo</label>
+                        <input type="name" id="name" required="required">
+                        <span class='msg-erro msg-nome'></span>
+                    </div>
+                    <div class="input-block">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required="required">
+                    </div>
+                    <div class="input-block">
+                        <label for="cpf">CPF <small>(somente números)</small></label>
+                        <input id="cpf" type="number" placeholder="xxx.xxx.xxx-xx"required="required">
+                    </div>
+                    <div class="input-block">
+                        <label for="telefone">Telefone <small>(somente números)</small></label>
+                        <input name="telefone" id="telefone" placeholder="(DDD) xxxxx - xxxx"type="number" required="required">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nos informe seu endereço!</legend>
+                <div class="select-block">
+                    <label for="subject">Estado</label>
+                    <select name="uf" id="subject" required="required">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+
+                </div>
+                <div class="select-block">
+                    <label for="subject">Cidade</label>
+                    <select name="city" disabled="disabled" id="subject" required="required">
+                        <option value="">Selecione uma Cidade</option>
+                    </select>
+                </div>
+                <div class="select-block">
+                    <label for="complemento">Número/Complemento</label>
+                    
+                </div>
+                <div class="input-block" id="input-block2">
+                    <input name="complemento" id="complemento" type="text" required="required">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Estamos quase lá</legend>
+                    <div class="input-block" id="input-block3" >
+                        <label for="senha">Digite uma senha</label>
+                        <input name="senha" id="senha" type="password" required="required">
+                         <label for="senha">Digite novamente</label>
+                        <input name="confirmeSenha" id="confirmeSenha" type="password" required="required">
+                        <span class="eye2">
+                           <img src="images/icons/eye.png" alt="Mostrar senha"> 
+                        </span>
+                         <span class="eye">
+                           <img src="images/icons/eye.png" alt="Mostrar senha"> 
+                        </span>
+                    </div>
+            </fieldset>
+            </form>
+            <footer>
+                <p>
+                    <img src="images/icons/warning.svg" alt="Aviso importante">
+                    Importante!
+                    <br>
+                    Preencha todos os dados
+                </p>
+                <button type="submit" form="create-registration">Salvar cadastro</button>
+            </footer>
+        </main>
+</div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+            <img src="images/check.svg" alt="Cadastro concluído">
+                <h1>Cadastro concluído</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/customer-registration.js"></script>
+</body>
+</html>
