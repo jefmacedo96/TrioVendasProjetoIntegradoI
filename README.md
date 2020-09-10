@@ -35,3 +35,8 @@ PRODUTO:
 - Número de Série
 - Tipo de Produto
 - Quantidade
+
+Pedidos:
+- ID
+- Preço
+- Produtos
